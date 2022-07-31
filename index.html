@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <title>Image Editor</title>
+  </head>
+  <body>
+    <h1>Image Editor</h1>
+    <div class="wrapper">
+      <div class="container">
+        <div class="editor__panel">
+          <div class="filters">
+            <h3>Filters</h3>
+            <div class="filters__row">
+              <div class="brightness">Brightness</div>
+              <div class="saturation">Saturation</div>
+            </div>
+            <div class="filters__row">
+              <div class="grayscale">Grayscale</div>
+              <div class="inversion">Inversion</div>
+            </div>
+            <div class="filters__slider">
+              <div class="filter__info">
+                <h3 class="name">Brightness</h3>
+                <p class="value">100%</p>
+              </div>
+              <input type="range" id="filters__slider__input" value="100" min="0" max="200" />
+            </div>
+            </div>
+            <div class="rotate__wrapper">
+              <h3 class="title">Rotate & Flip</h3>
+              <div class="rotate">
+                <div class="options">
+                  <button id="left"><i class="fa-solid fa-rotate-left"></i></button>
+                  <button id="right"><i class="fa-solid fa-rotate-right"></i></button>
+                  <button id="horizontal"><i class="bx bx-reflect-vertical"></i></button>
+                  <button id="vertical"><i class="bx bx-reflect-horizontal"></i></button>
+                </div>
+                <button class="reset-filter">Reset Filters</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="image__wrapper">
+        <div class="image">
+          <img src="https://socialistmodernism.com/wp-content/uploads/2017/07/placeholder-image.png?w=200" />
+          </div>
+          <div class="controls">
+              <input type="file" class="file-input" accept="image/*" hidden />
+              <button class="choose-img">Choose Image</button>
+              <button class="save-img">Save Image</button>
+        </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
