@@ -19,6 +19,10 @@
   padding: 1rem;
 }
 
+.image {
+  min-height: 30rem;
+  margin: 1rem;
+}
 .filters {
   display: flex;
   flex-direction: column;
@@ -40,8 +44,7 @@
   align-items: center;
   width: 10rem;
   height: 5rem;
-  background-color: blue;
-  color: #f3f3f3;
+  color: black;
   font-weight: 900;
   cursor: pointer;
 }
@@ -65,6 +68,10 @@
   display: flex;
   justify-content: space-between;
   padding: 1rem;
+}
+.active {
+  background-color: blue;
+  color: #f3f3f3;
 }
 
 h1 {
